@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# Task-Management-App
+You are required to build a app using react.
+first we have to take new teraminal and give the command is: npx create-react-app task manager
+Navigate to the project directory: Once the project is created, navigate to the project directory by running:cd task-manager
+Clean up default files: By default, Create React App generates some files and code that you may not need for your task manager project. You can delete the src/App.js and src/App.css files, as well as the contents of the src/index.css file.
+Create components: In the src directory, create a new directory named components. Inside the components directory, create the necessary components for your task manager, such as TaskList.js, Task.js, AddTaskForm.js, etc. You can use functional components or class components based on your preference.
+Implement functionality: In each component, implement the necessary functionality for your task manager. For example, TaskList.js can handle displaying a list of tasks, Task.js can represent an individual task, and AddTaskForm.js can handle adding new tasks to the list.
+Run the project: Once you've implemented the necessary components and functionality, you can run your project locally. In the project directory, run the following command:
+shell
+*npm start
+This starts the develop![Command](https://github.com/Mainapureti/Task-Management-App/assets/137265043/37b4893c-8d59-4c82-9e5f-8d76f71884d2)
+ment server, and your task manager application should open in your default web browser at http://localhost:3000. Any changes you make to the code will be automatically reloaded in the browser.
+A task management app typically consists of a user interface that allows users to view, add, edit, and delete tasks. The UI can be created using HTML, CSS, and JavaScript, and styled with CSS. Headers and tables are commonly used elements in task management apps to organize and display task information.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Here's an example of how you can structure a task management app using CSS, headers, and tables:![Screenshot (55)](https://github.com/Mainapureti/Task-Management-App/assets/137265043/1e907499-3d98-4c60-9b26-021a35e4ee4d)
+some css styles are:
+.task-manager {
+  margin: 20px;
+}
 
-## Available Scripts
+h1 {
+  text-align: center;
+}
 
-In the project directory, you can run:
+form {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
 
-### `npm start`
+input[type="text"] {
+  flex-grow: 1;
+  padding: 5px;
+}
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+button {
+  margin-left: 10px;
+}
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
 
-### `npm test`
+th, td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+th {
+  background-color: #f2f2f2;
+}
 
-### `npm run build`
+td:last-child {
+  text-align: center;
+}
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+td:last-child button {
+  margin-left: 5px;
+}
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
